@@ -15,7 +15,7 @@ The service is a singleton, you can easily make a call with :
 				
 #Install
 
-1. Drag GoogleMapsKit folder to your project.
+1. Drag GoogleMapsDirection folder to your project.
 2. Use Cocoapods
 	
 #License
