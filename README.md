@@ -6,18 +6,18 @@ GoogleMapsDirection provide a wrapper for the Google Direction Service API. You 
 
 The service is a singleton, you can easily make a call with :
 
-  [[GMDirectionService sharedInstance] getDirectionsFrom:origin to:destination succeeded:^(GMDirection *directionResponse) {
-      NSLog(@"Duration : %@", [directionResponse durationHumanized]);
-      NSLog(@"Distance : %@", [directionResponse distanceHumanized]);
-  } failed:^(NSError *error) {
-      NSLog(@"Can't reach the server")
-  }];
-        
+	[[GMDirectionService sharedInstance] getDirectionsFrom:origin to:destination succeeded:^(GMDirection *directionResponse) {
+			NSLog(@"Duration : %@", [directionResponse durationHumanized]);
+			NSLog(@"Distance : %@", [directionResponse distanceHumanized]);
+	} failed:^(NSError *error) {
+			NSLog(@"Can't reach the server")
+	}];
+				
 #Install
 
 1. Drag GoogleMapsKit folder to your project.
 2. Use Cocoapods
-  
+	
 #License
 
 Copyright (C) 2012 Djengo
