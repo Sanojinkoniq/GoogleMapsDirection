@@ -12,20 +12,20 @@ The service is a singleton, you can easily make a call with :
 	} failed:^(NSError *error) {
 			NSLog(@"Can't reach the server")
 	}];
-				
+
 #Install
 
 Use CocoaPods and add this in your podfile
 
 	pod "GoogleMapsDirection"
 
-Just run 
+Just run
 
  	pod install
-	
+
 #License
 
-Copyright (C) 2012 Djengo
+Copyright (C) 2013 Djengo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
