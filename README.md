@@ -16,10 +16,12 @@ The service is a singleton, you can easily make a call with :
 #Install
 
 Use CocoaPods and add this in your podfile
-  pod "GoogleMapsDirection"
+
+	pod "GoogleMapsDirection"
 
 Just run 
-  pod install
+
+ 	pod install
 	
 #License
 
