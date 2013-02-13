@@ -2,9 +2,9 @@
 //  GMDirectionService.m
 //  speakeasy
 //
-//  Created by Tanguy Goretti on 8/02/13.
-//  Copyright (c) 2013 Djengo. All rights reserved.
-//
+//  Created by Djengo on 8/02/13.
+//  Copyright (c) 2013 Djengo. Under MIT Licence.
+//  http://opensource.org/licenses/MIT
 
 #import "GMDirectionService.h"
 
