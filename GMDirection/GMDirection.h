@@ -12,6 +12,14 @@
 
 @property (strong,nonatomic) NSDictionary* directionResponse;
 
+- (NSString*)status;
+- (BOOL)statusOK;
+- (BOOL)statusNotFound;
+- (BOOL)statusZeroResults;
+- (BOOL)statusMaxWaypointsExceeded;
+- (BOOL)statusInvalidRequest;
+- (BOOL)statusOverQueryLimit;
+- (BOOL)statusUnknownError;
 - (NSNumber*)distanceInMeters;
 - (NSNumber*)durationInSec;
 - (NSString*)durationHumanized;

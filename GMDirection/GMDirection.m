@@ -14,6 +14,16 @@ static const NSString *DISTANCE = @"distance";
 static const NSString *DURATION = @"duration";
 static const NSString *VALUE    = @"value";
 static const NSString *TEXT     = @"text";
+static const NSString *STATUS   = @"status";
+
+static NSString *STATUS_OK                       = @"OK";
+static NSString *STATUS_NOT_FOUND                = @"NOT_FOUND";
+static NSString *STATUS_ZERO_RESULTS             = @"ZERO_RESULTS";
+static NSString *STATUS_MAX_WAYPOINTS_EXCEEDED   = @"MAX_WAYPOINTS_EXCEEDED";
+static NSString *STATUS_INVALID_REQUEST          = @"INVALID_REQUEST";
+static NSString *STATUS_OVER_QUERY_LIMIT         = @"OVER_QUERY_LIMIT";
+static NSString *STATUS_REQUEST_DENIED           = @"REQUEST_DENIED";
+static NSString *STATUS_UNKNOWN_ERROR            = @"UNKNOWN_ERROR";
 
 @implementation GMDirection
 
@@ -25,6 +35,47 @@ static const NSString *TEXT     = @"text";
     [direction setDirectionResponse:directionResponse];
     return direction;
 }
+
+- (NSString*)status
+{
+    return [[self directionResponse] objectForKey:STATUS];
+}
+
+- (BOOL)statusOK
+{
+    return [[self status] isEqualToString:STATUS_OK];
+}
+
+- (BOOL)statusNotFound
+{
+    return [[self status] isEqualToString:STATUS_NOT_FOUND];
+}
+
+- (BOOL)statusZeroResults
+{
+    return [[self status] isEqualToString:STATUS_ZERO_RESULTS];
+}
+
+- (BOOL)statusMaxWaypointsExceeded
+{
+    return [[self status] isEqualToString:STATUS_MAX_WAYPOINTS_EXCEEDED];
+}
+
+- (BOOL)statusInvalidRequest
+{
+    return [[self status] isEqualToString:STATUS_INVALID_REQUEST];
+}
+
+- (BOOL)statusOverQueryLimit
+{
+    return [[self status] isEqualToString:STATUS_OVER_QUERY_LIMIT];
+}
+
+- (BOOL)statusUnknownError
+{
+    return [[self status] isEqualToString:STATUS_UNKNOWN_ERROR];
+}
+
 
 - (NSArray*)routes
 {
